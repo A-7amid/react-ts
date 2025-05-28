@@ -1,4 +1,4 @@
-import type { Name } from "./person.types";
+import type { Name } from "./Person.types";
 
 type PersonListProps = {
   names: Name[];
