@@ -1,10 +1,9 @@
-import { Private } from "./components/auth/Private";
-import { Profile } from "./components/auth/Profile";
+import { RandomNumber } from "./components/restriction/RandomNumber";
 
 const App: React.FC = () => {
   return (
     <>
-      <Private isLoggedIn={false} component={Profile} />
+      <RandomNumber value={10} isPositive />
     </>
   );
 };
