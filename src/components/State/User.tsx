@@ -6,7 +6,7 @@ type AuthUser = {
 };
 
 export const User = () => {
-  const [user, setUser] = useState<AuthUser>({} as AuthUser);
+  const [user, setUser] = useState({} as AuthUser);
 
   return (
     <div>

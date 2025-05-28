@@ -1,11 +1,14 @@
-import { User } from "./components/State/User";
+import { User } from "./components/context/User";
+import { UserProvider } from "./components/context/User.provider";
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
-      <User />
+      <UserProvider>
+        <User />
+      </UserProvider>
     </>
   );
-}
+};
 
 export default App;
