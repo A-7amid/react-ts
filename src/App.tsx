@@ -1,10 +1,11 @@
-import { RandomNumber } from "./components/restriction/RandomNumber";
-import { Toast } from "./components/templateliterals/Toast";
+import { CustomButton } from "./components/html/CustomButton";
 
 const App: React.FC = () => {
   return (
     <>
-      <Toast position="center" />
+      <CustomButton variant="primary" onClick={() => console.log("clicked")}>
+        Primary Button
+      </CustomButton>
     </>
   );
 };
