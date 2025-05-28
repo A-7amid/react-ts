@@ -1,9 +1,10 @@
 import { RandomNumber } from "./components/restriction/RandomNumber";
+import { Toast } from "./components/templateliterals/Toast";
 
 const App: React.FC = () => {
   return (
     <>
-      <RandomNumber value={10} isPositive />
+      <Toast position="center" />
     </>
   );
 };
