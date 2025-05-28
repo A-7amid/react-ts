@@ -1,12 +1,10 @@
-import { User } from "./components/context/User";
-import { UserProvider } from "./components/context/User.provider";
+import { Private } from "./components/auth/Private";
+import { Profile } from "./components/auth/Profile";
 
 const App: React.FC = () => {
   return (
     <>
-      <UserProvider>
-        <User />
-      </UserProvider>
+      <Private isLoggedIn={false} component={Profile} />
     </>
   );
 };
